@@ -1,0 +1,18 @@
+/* Add styles for the dark mode */
+@media (prefers-color-scheme: dark) {
+    /* Add your dark mode styles here */
+    body {
+      background-color: #e26363; /* Dark background color */
+      color: #ffffff; /* Light text color */
+    }
+  }
+  
+  /* Add styles for the light mode */
+  @media (prefers-color-scheme: light) {
+    /* Add your light mode styles here */
+    body {
+      background-color: #ffffff; /* Light background color */
+      color: #333333; /* Dark text color */
+    }
+  }
+  

@@ -1,16 +1,32 @@
-import { useState } from 'react';
+
+import {Footer} from "./Footer";
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { MaterialUISwitch } from './Dark';
+import React, { useState } from "react";
+// import { useMediaQuery } from "react-responsive";
 
 const navigation = [
-    { name: 'About', href: '#' },
     { name: 'Skills', href: '#' },
     { name: 'Projects', href: '#' },
     { name: 'Contact', href: '#' },
 ]
 
 export const Home = () => {
-    const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [isDark, setIsDark] = useState(false);
+
+    const toggleButton = () => {
+        setIsDark((prevIsdark) => !prevIsdark)
+    }
+
+    // const systemPrefersDark = useMediaQuery(
+    //     {
+    //         query: "(prefers-color-scheme: dark)",
+    //     },
+    //     undefined,
+    //     (isSystemDark) => setIsDark(isSystemDark)
+    // );
 
     return (
         <div className="bg-white">
@@ -45,7 +61,8 @@ export const Home = () => {
                     </div>
                     <div className="hidden lg:flex lg:flex-1 lg:justify-end">
                         <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                            Log in <span aria-hidden="true">&rarr;</span>
+                            {/* Log in <span aria-hidden="true">&rarr;</span> */}
+                            <MaterialUISwitch checked={isDark} onChange={toggleButton} />
                         </a>
                     </div>
                 </nav>
@@ -88,7 +105,7 @@ export const Home = () => {
                                         href="#"
                                         className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                                     >
-                                        Log in
+                                        log in
                                     </a>
                                 </div>
                             </div>
@@ -142,10 +159,9 @@ export const Home = () => {
                 </div>
             </div>
 
-            <footer>
 
-            </footer>
 
+            <Footer/>
 
 
         </div>
