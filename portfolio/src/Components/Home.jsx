@@ -1,15 +1,18 @@
-
 import {Footer} from "./Footer";
 import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { MaterialUISwitch } from './Dark';
 import React, { useState } from "react";
+import { ProjectSection } from "./Project";
+import { HeroSection } from "./hero";
+import { AboutSection } from "./About";
 // import { useMediaQuery } from "react-responsive";
 
 const navigation = [
     { name: 'Skills', href: '#' },
     { name: 'Projects', href: '#' },
     { name: 'Contact', href: '#' },
+    { name: 'Resume', href: '#' },
 ]
 
 export const Home = () => {
@@ -127,7 +130,7 @@ export const Home = () => {
                             Resume PDF available here.{' '}
                             <a href="#" className="font-semibold text-indigo-600">
                                 <span className="absolute inset-0" aria-hidden="true" />
-                                Read more <span aria-hidden="true">&rarr;</span>
+                                click here <span aria-hidden="true">&rarr;</span>
                             </a>
                         </div>
                     </div>
@@ -143,10 +146,10 @@ export const Home = () => {
                                 href="#"
                                 className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                             >
-                                Get started
+                                Skills
                             </a>
                             <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                                Learn more <span aria-hidden="true">→</span>
+                                Projects <span aria-hidden="true">→</span>
                             </a>
                         </div>
                     </div>
@@ -158,6 +161,10 @@ export const Home = () => {
 
                 </div>
             </div>
+
+            <AboutSection/>
+            <HeroSection/>
+            <ProjectSection/>
 
 
 

@@ -13,7 +13,7 @@ export const Footer = () => {
                     <a href="https://twitter.com/Pankaj_JS" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
                         <FontAwesomeIcon size="2xl" icon={faTwitter} />
                     </a>
-                    <a href="https://www.linkedin.com/in/your-linkedin-username" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
+                    <a href="https://www.linkedin.com/in/pankajyadav67" target="_blank" rel="noopener noreferrer" className="text-white hover:text-gray-300">
                         <FontAwesomeIcon size="2xl" icon={faLinkedin} />
                     </a>
                 </div>
