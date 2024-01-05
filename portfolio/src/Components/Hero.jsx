@@ -14,8 +14,8 @@ import MongodbIcon from '/mongodb-icon.svg';
 export const HeroSection = () => {
     return (
         <section className="bg-zinc-800 text-white py-16">
-            <div className="container mx-auto text-center">
-                <h1 className="text-4xl font-bold mb-4">Skills</h1>
+            <div id="skills" className="container mx-auto text-center">
+                <h1  className="text-4xl  font-bold mb-4">Skills</h1>
                 <p className="text-lg mb-8">As a full-stack Web developer, I work with various tools and technologies:</p>
 
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
