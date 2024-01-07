@@ -2,10 +2,12 @@ import { Dialog } from '@headlessui/react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import React, { useState } from 'react';
-import { HeroSection } from './hero';
+import { HeroSection } from './Hero';
 import { AboutSection } from './About';
 import { ProjectSection } from './Project';
 import { Footer } from './Footer';
+
+
 
 export const Home = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
