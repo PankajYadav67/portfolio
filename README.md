@@ -1,7 +1,3 @@
-
-![Logo](https://www.thehindu.com/theme/images/th-online/thehindu-logo.svg)
-
-
 # Portfolio Website
 
 This website is a portfolio site where I used React, JS, and Tailwind CSS to showcase my skills, resume, projects, and contact information.
@@ -42,9 +38,29 @@ Run npm run dev command on terminal
 **Navbar:**
 ![App Screenshot](/public/Screenshot%20(189).png)
 
+
+
+
+
+
+
+
+
+
+
 **Hero Section:**
 ![App Screenshot](/public/Screenshot%20(191).png)
 ![App Screenshot](/public/Screenshot%20(193).png)
+
+
+
+
+
+
+
+
+
+
 
 **Footer:**
 ![App Screenshot](/public/Screenshot%20(192).png)
