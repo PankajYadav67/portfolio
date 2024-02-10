@@ -13,11 +13,11 @@ export const ProjectSection = () => {
       isMajor: true,
     },
     {
-      title: "Major Project 2",
-      description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      githubLink: "https://github.com/your-major-project-2",
+      title: "Powtoon",
+      description: "Powtoon is an british animation platform.",
+      githubLink: "https://github.com/PankajYadav67/powtoon",
       liveLink: "https://your-major-project-2-live-link.com",
-      techStack: ["Angular", "Express.js", "MySQL"],
+      techStack: ["React", "Express.js", "MongoDB", "Tailwind CSS", "Javascript"],
       isMajor: true,
     },
     {
