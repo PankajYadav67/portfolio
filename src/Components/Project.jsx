@@ -46,14 +46,13 @@ export const ProjectSection = () => {
     },
   ];
 
-
   return (
     <section className="bg-white py-16">
       <div className="container mx-auto">
         <h2 id="projects" className="text-4xl font-bold mb-8">Projects</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          {projects.map((project, index) => (
-            <div key={index} className="bg-gray-100 p-6 rounded-lg">
+          {projects.map(project => (
+            <div className="bg-gray-100 p-6 rounded-lg">
               <div className="flex flex-col md:flex-row md:justify-between items-center">
                 <h3 className="text-xl font-semibold mb-4 md:mb-0 md:mr-4">{project.title}</h3>
                 <div className="flex space-x-2 mt-4 md:mt-0">
@@ -74,8 +73,8 @@ export const ProjectSection = () => {
               <p className="text-gray-600 mb-4">{project.description}</p>
               <div className="flex justify-between items-end">
                 <div className="flex flex-wrap space-x-2">
-                  {project.techStack.map((tech, techIndex) => (
-                    <span key={techIndex} className="bg-gray-300 text-gray-700 px-2 py-1 rounded-md text-sm">
+                  {project.techStack.map(tech => (
+                    <span className="bg-gray-300 text-gray-700 px-2 py-1 rounded-md text-sm" key={tech}>
                       {tech}
                     </span>
                   ))}

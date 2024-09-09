@@ -9,6 +9,7 @@ export const AboutSection = () => {
             className="h-48 w-48 rounded-full object-cover mx-auto"
             src="/blackwhite.jpg"
             alt="Profile"
+            loading="lazy"
           />
         </div>
         <div className="text-center lg:text-left lg:ml-8">
