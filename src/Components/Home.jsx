@@ -6,8 +6,7 @@ import { HeroSection } from './Hero';
 import { AboutSection } from './About';
 import { ProjectSection } from './Project';
 import { Footer } from './Footer';
-
-
+import GoogleAd from './GoogleAd';
 
 export const Home = () => {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -151,18 +150,18 @@ export const Home = () => {
                             <div className="-my-6 divide-y divide-gray-500/10">
                                 <div className="space-y-2 py-6">
                                     <ScrollLink
-                                       to="skills"
-                                       spy={true}
-                                       smooth={true}
-                                       duration={800}
-                                       offset={-70}
-                                       style={{ cursor: 'pointer' }}
-                                       onClick={() => {
-                                           closeMobileMenu();
-                                           scrollToSkills();
-                                       }}
+                                        to="skills"
+                                        spy={true}
+                                        smooth={true}
+                                        duration={800}
+                                        offset={-70}
+                                        style={{ cursor: 'pointer' }}
+                                        onClick={() => {
+                                            closeMobileMenu();
+                                            scrollToSkills();
+                                        }}
                                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                  
+
                                     >
                                         Skills
                                     </ScrollLink>
@@ -178,7 +177,7 @@ export const Home = () => {
                                             scrollToProjects();
                                         }}
                                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                      
+
                                     >
                                         Projects
                                     </ScrollLink>
@@ -194,7 +193,7 @@ export const Home = () => {
                                             scrollToContacts();
                                         }}
                                         className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                       
+
                                     >
                                         Contact
                                     </ScrollLink>
@@ -212,7 +211,7 @@ export const Home = () => {
                                             scrollToAbout();
                                         }}
                                         className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                                        
+
                                     >
                                         About
                                     </ScrollLink>
@@ -277,6 +276,7 @@ export const Home = () => {
             </div>
 
             <AboutSection />
+            <GoogleAd />
             <HeroSection />
             <ProjectSection />
             <Footer />
